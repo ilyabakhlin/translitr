@@ -1,3 +1,6 @@
 # Git files.
 .gitattributes text eol=lf
 .gitignoe text eol=lf
+
+# JSON files.
+*.json text eol=lf
