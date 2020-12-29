@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "module": "ES2020",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "sourceMap": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "target": "ES5"
+    }
+}

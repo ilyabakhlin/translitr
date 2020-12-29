@@ -3,3 +3,11 @@
 
 # PhpStorm directory.
 /.idea/
+
+# Public directories.
+/public/css/
+public/js/
+
+# TypeScript files.
+/src/TypeScript/**/*.js
+/src/TypeScript/**/*.js.map

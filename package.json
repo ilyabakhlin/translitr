@@ -16,5 +16,10 @@
     "repository": {
         "type": "git",
         "url": "git@github.com:ilyabakhlin/translitr.git"
+    },
+    "scripts": {
+        "build": "webpack -c ./webpack.js",
+        "build-dev": "webpack -c ./webpack.js --mode development",
+        "build-dev-watch": "webpack -c ./webpack.js --mode development -w"
     }
 }

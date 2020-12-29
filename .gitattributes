@@ -5,6 +5,9 @@
 # HTML files.
 *.html text eol=lf
 
+# JavaScript files.
+*.js text eol=lf
+
 # JSON files.
 *.json text eol=lf
 
