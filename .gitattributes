@@ -1,6 +1,15 @@
 # Git files.
 .gitattributes text eol=lf
-.gitignoe text eol=lf
+.gitignore text eol=lf
+
+# HTML files.
+*.html text eol=lf
 
 # JSON files.
 *.json text eol=lf
+
+# Sass files.
+*.scss text eol=lf
+
+# TypeScript files.
+*.ts text eol=lf

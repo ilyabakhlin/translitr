@@ -1,2 +1,5 @@
+# Node.js directory.
+/node_modules/
+
 # PhpStorm directory.
 /.idea/
