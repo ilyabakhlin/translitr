@@ -1,5 +1,8 @@
 import {Key} from "../Types/Key";
 
+/**
+ * @type Key[]
+ */
 export const Digits: Key[] = [
     {
         code: "Digit0",

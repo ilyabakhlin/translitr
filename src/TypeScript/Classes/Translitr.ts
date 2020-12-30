@@ -86,7 +86,6 @@ export class Translitr
         if (typeof language === "undefined") {
             throw Error("The language constant is undefined.");
         } else {
-            event.preventDefault();
             return language.character;
         }
     }

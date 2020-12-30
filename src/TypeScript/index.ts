@@ -47,8 +47,11 @@ window.addEventListener("load", (): void => {
     const text: HTMLTextAreaElement = getElementTextArea("textarea#text");
     const translitr: Translitr = new Translitr();
     text.addEventListener("keydown", (event: KeyboardEvent): void => {
-        const character: string = translitr.translit(event, languages);
-        text.value = text.value + character;
-        window.console.log(character);
+        try {
+            event.preventDefault();
+            text.value += translitr.translit(event, languages);
+        } catch (error) {
+            window.console.error(error);
+        }
     });
 });
