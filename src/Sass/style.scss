@@ -4,8 +4,19 @@ html {
     body {
         margin: 0;
 
+        select {
+            width: 100%;
+        }
+
         textarea {
+            box-sizing: border-box;
+            height: 8rem;
             resize: none;
+            width: 100%;
+        }
+
+        .container {
+            margin: 1rem;
         }
     }
 }

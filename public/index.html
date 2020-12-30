@@ -2,17 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta content="initial-scale=1, width=device-width" name="viewport">
         <link href="css/style.css" media="all" rel="stylesheet">
         <title>Translitr</title>
     </head>
     <body>
-        <main>
-            <label for="languages">Language</label>
-            <select id="languages" name="languages">
-                <option value="en-US">American English</option>
-            </select>
-            <label for="text">Content</label>
-            <textarea id="text" name="text"></textarea>
+        <main class="container">
+            <div>
+                <div>
+                    <label for="languages">Language:</label>
+                </div>
+                <select id="languages" name="languages">
+                    <option value="en-US">American English</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label for="text">Content:</label>
+                </div>
+                <textarea id="text" name="text"></textarea>
+            </div>
         </main>
         <script src="js/script.js"></script>
     </body>
