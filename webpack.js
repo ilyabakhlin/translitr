@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-    entry: "./src/TypeScript/index.js",
+    entry: "./src/TypeScript/index.ts",
     mode: "production",
     module: {
         rules: [
