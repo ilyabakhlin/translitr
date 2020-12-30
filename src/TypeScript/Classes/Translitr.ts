@@ -1,3 +1,4 @@
+import {Digits} from "../Objects/Digits";
 import {Keys} from "../Objects/Keys";
 import {Quote} from "../Objects/Quote";
 import {Semicolon} from "../Objects/Semicolon";
@@ -7,18 +8,22 @@ import {Language} from "../Types/Key/Language";
 export class Translitr
 {
     /**
-     * @param {KeyboardEvent} event
-     * @return {Key}
+     * @param {string} code
+     * @return {Key | undefined}
      */
-    public detectKey(event: KeyboardEvent): Key | undefined
+    public detectKey(code: string): Key | undefined
     {
         switch (true) {
-            case /^Quote$/.test(event.code):
+            case /^Digit\d$/.test(code):
+                return this.getDigit(code);
+            case /^Key\w$/.test(code):
+                return this.getKey(code);
+            case /^Quote$/.test(code):
                 return Quote;
-            case /^Semicolon$/.test(event.code):
+            case /^Semicolon$/.test(code):
                 return Semicolon;
             default:
-                return this.getKey(event.code);
+                throw Error(`The key code ${code} is not supported.`);
         }
     }
 
@@ -47,6 +52,19 @@ export class Translitr
      * @param {string} code
      * @return {Key | undefined}
      */
+    public getDigit(code: string): Key | undefined
+    {
+        return Digits.find((digit: Key): Key | undefined => {
+            if (digit.code === code) {
+                return digit;
+            }
+        });
+    }
+
+    /**
+     * @param {string} code
+     * @return {Key | undefined}
+     */
     public getKey(code: string): Key | undefined
     {
         return Keys.find((key: Key): Key | undefined => {
@@ -63,7 +81,7 @@ export class Translitr
      */
     public translit(event: KeyboardEvent, languages: HTMLSelectElement): string
     {
-        const key: Key | undefined = this.detectKey(event);
+        const key: Key | undefined = this.detectKey(event.code);
         const language: Language | undefined = this.detectLanguages(key, languages);
         if (typeof language === "undefined") {
             throw Error("The language constant is undefined.");
