@@ -1,4 +1,5 @@
 import {Keys} from "../Objects/Keys";
+import {Semicolon} from "../Objects/Semicolon";
 import {Key} from "../Types/Key";
 import {Language} from "../Types/Key/Language";
 
@@ -10,7 +11,12 @@ export class Translitr
      */
     public detectKey(event: KeyboardEvent): Key | undefined
     {
-        return this.getKey(event.code);
+        switch (true) {
+            case /^Semicolon$/.test(event.code):
+                return Semicolon;
+            default:
+                return this.getKey(event.code);
+        }
     }
 
     /**
