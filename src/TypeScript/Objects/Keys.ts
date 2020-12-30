@@ -149,6 +149,15 @@ export const Keys: Key[] = [
         ],
     },
     {
+        code: "KeyS",
+        languages: [
+            {
+                code: "en-US",
+                character: "s",
+            },
+        ],
+    },
+    {
         code: "KeyT",
         languages: [
             {
