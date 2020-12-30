@@ -57,7 +57,7 @@ export class Translitr
         const key: Key | undefined = this.detectKey(event);
         const language: Language | undefined = this.detectLanguages(key, languages);
         if (typeof language === "undefined") {
-            return "The language constant is undefined.";
+            throw Error("The language constant is undefined.");
         } else {
             event.preventDefault();
             return language.character;
