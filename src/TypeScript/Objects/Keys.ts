@@ -77,6 +77,24 @@ export const Keys: Key[] = [
         ],
     },
     {
+        code: "KeyI",
+        languages: [
+            {
+                code: "en-US",
+                character: "i",
+            },
+        ],
+    },
+    {
+        code: "KeyJ",
+        languages: [
+            {
+                code: "en-US",
+                character: "j",
+            },
+        ],
+    },
+    {
         code: "KeyK",
         languages: [
             {
