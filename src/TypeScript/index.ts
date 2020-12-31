@@ -43,13 +43,16 @@ function getElementTextArea(query: string): HTMLTextAreaElement
 }
 
 window.addEventListener("load", (): void => {
-    const languages: HTMLSelectElement = getElementSelect("select#languages");
-    const text: HTMLTextAreaElement = getElementTextArea("textarea#text");
     const translitr: Translitr = new Translitr();
+    const languages: HTMLSelectElement = getElementSelect("select#languages");
+    languages.addEventListener("change", (): void => {
+        translitr.setLanguage(languages.options[languages.selectedIndex].value);
+    });
+    const text: HTMLTextAreaElement = getElementTextArea("textarea#text");
     text.addEventListener("keydown", (event: KeyboardEvent): void => {
         try {
-            event.preventDefault();
             text.value += translitr.translit(event, languages);
+            event.preventDefault();
         } catch (error) {
             window.console.error(error);
         }

@@ -8,6 +8,11 @@ import {Language} from "../Types/Key/Language";
 export class Translitr
 {
     /**
+     * @type {string}
+     * @private
+     */
+    private language: string = ""; // TODO: Rethink the default value.
+    /**
      * @param {string} code
      * @return {Key | undefined}
      */
@@ -72,6 +77,31 @@ export class Translitr
                 return key;
             }
         });
+    }
+
+    /**
+     * @return {string}
+     */
+    public getLanguage(): string
+    {
+        if (this.language === "") {
+            throw Error(); // TODO: Define an error message.
+        } else {
+            return this.language;
+        }
+    }
+
+    /**
+     * @param {string} language
+     * @return {string}
+     */
+    public setLanguage(language: string): string
+    {
+        if (/^\w{2}-\w{2}$/.test(language)) {
+            return this.language = language;
+        } else {
+            throw Error(); // TODO: Define an error message.
+        }
     }
 
     /**
