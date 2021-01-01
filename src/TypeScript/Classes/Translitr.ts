@@ -85,7 +85,7 @@ export class Translitr
     public getLanguage(): string
     {
         if (this.language === "") {
-            throw Error(); // TODO: Define an error message.
+            throw new Error("The language property is not defined.");
         } else {
             return this.language;
         }
@@ -97,10 +97,10 @@ export class Translitr
      */
     public setLanguage(language: string): string
     {
-        if (/^\w{2}-\w{2}$/.test(language)) {
+        if (/^[a-z]{2}-[A-Z]{2}$/.test(language)) {
             return this.language = language;
         } else {
-            throw Error(); // TODO: Define an error message.
+            throw Error("The given argument for the language property is not valid.");
         }
     }
 

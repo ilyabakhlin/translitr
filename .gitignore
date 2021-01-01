@@ -1,3 +1,6 @@
+# Jest directory.
+/coverage/
+
 # Node.js directory.
 /node_modules/
 
@@ -11,3 +14,5 @@
 # TypeScript files.
 /src/TypeScript/**/*.js
 /src/TypeScript/**/*.js.map
+/tests/**/*.js
+/tests/**/*.js.map

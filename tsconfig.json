@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "alwaysStrict": true,
+        "esModuleInterop": true,
         "module": "ES2020",
         "noImplicitAny": true,
         "noImplicitThis": true,
