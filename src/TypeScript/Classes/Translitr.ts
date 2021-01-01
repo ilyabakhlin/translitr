@@ -68,15 +68,16 @@ export class Translitr
 
     /**
      * @param {string} code
-     * @return {Key | undefined}
+     * @return {Key}
      */
-    public getKey(code: string): Key | undefined
+    public getKey(code: string): Key
     {
-        return Keys.find((key: Key): Key | undefined => {
-            if (key.code === code) {
-                return key;
-            }
-        });
+        const key: Key | undefined = Keys.find((key: Key): boolean => key.code === code);
+        if (typeof key === "undefined") {
+            throw Error(); // TODO: Define an error message.
+        } else {
+            return key;
+        }
     }
 
     /**
