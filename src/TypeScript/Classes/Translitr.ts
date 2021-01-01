@@ -11,7 +11,8 @@ export class Translitr
      * @type {string}
      * @private
      */
-    private language: string = ""; // TODO: Rethink the default value.
+    private language: string = "en-US";
+
     /**
      * @param {string} code
      * @return {Key | undefined}
@@ -85,11 +86,7 @@ export class Translitr
      */
     public getLanguage(): string
     {
-        if (this.language === "") {
-            throw new Error("The language property is not defined.");
-        } else {
-            return this.language;
-        }
+        return this.language;
     }
 
     /**

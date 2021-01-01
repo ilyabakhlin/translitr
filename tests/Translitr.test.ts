@@ -18,9 +18,9 @@ describe("Testing the Translitr Class", (): void => {
         translitr.setLanguage(given);
         expect(translitr.getLanguage()).toMatch(expected);
     });
-    test("Testing the getLanguage method's error.", (): void => {
+    test("Testing the getLanguage method's default value.", (): void => {
         const translitr: Translitr = new Translitr();
-        expect((): string => translitr.getLanguage()).toThrow(Error("The language property is not defined."));
+        expect(translitr.getLanguage()).toMatch(/^en-US$/);
     });
     test.each(languagesAvailable)("Testing the setLanguage method.", (given: string, expected: RegExp): void => {
         const translitr: Translitr = new Translitr();
