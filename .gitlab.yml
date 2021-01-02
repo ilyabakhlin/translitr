@@ -13,8 +13,8 @@ variables:
 
 .build:
     script:
-        - npm build-css
-        - npm build-js
+        - npm run build-css
+        - npm run build-js
     stage: build
 
 .test:
