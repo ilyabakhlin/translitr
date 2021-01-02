@@ -2,7 +2,7 @@ stages:
     - test
 
 variables:
-    IMAGE=registry.gitlab.com/quorrax/docker/runner/node
+    IMAGE: registry.gitlab.com/quorrax/docker/runner/node
 
 .test:
     before_script:
