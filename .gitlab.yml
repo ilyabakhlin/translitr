@@ -1,8 +1,21 @@
+cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+        - node_modules/
+        - public/
+
 stages:
     - test
+    - build
 
 variables:
     IMAGE: registry.gitlab.com/quorrax/docker/runner/node
+
+.build:
+    script:
+        - npm build-css
+        - npm build-js
+    stage: build
 
 .test:
     before_script:
@@ -12,12 +25,22 @@ variables:
         - npm test
     stage: test
 
-Node.js LTS:
+Node.js LTS Test:
     extends:
         - .test
     image: ${IMAGE}:lts
 
-Node.js Current:
+Node.js Current Test:
     extends:
         - .test
+    image: ${IMAGE}:current
+
+Node.js LTS Build:
+    extends:
+        - .build
+    image: ${IMAGE}:lts
+
+Node.js Current Build:
+    extends:
+        - .build
     image: ${IMAGE}:current
