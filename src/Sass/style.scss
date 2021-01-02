@@ -5,6 +5,7 @@ html {
         margin: 0;
 
         select {
+            font-size: 0.8125rem;
             width: 100%;
         }
 
@@ -16,7 +17,11 @@ html {
         }
 
         .container {
-            margin: 1rem;
+            margin: 0 1rem;
+
+            .row {
+                margin: 1rem 0;
+            }
         }
     }
 }
