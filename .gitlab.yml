@@ -1,0 +1,11 @@
+image: registry.gitlab.com/quorrax/docker/runner/node:lts
+
+stages:
+    - test
+
+Test:
+    before_script:
+        - npm install
+    script:
+        - npm test
+    stage: test

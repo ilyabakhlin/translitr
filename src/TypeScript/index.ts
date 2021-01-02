@@ -44,17 +44,12 @@ function getElementTextArea(query: string): HTMLTextAreaElement
 
 window.addEventListener("load", (): void => {
     const translitr: Translitr = new Translitr();
-    const languages: HTMLSelectElement = getElementSelect("select#languages");
-    languages.addEventListener("change", (): void => {
-        translitr.setLanguage(languages.options[languages.selectedIndex].value);
+    const layout: HTMLSelectElement = getElementSelect("select#layout");
+    layout.addEventListener("change", (): void => {
+        translitr.setLayout(layout.options[layout.selectedIndex].value);
     });
     const text: HTMLTextAreaElement = getElementTextArea("textarea#text");
     text.addEventListener("keydown", (event: KeyboardEvent): void => {
-        try {
-            text.value += translitr.translit(event, languages);
-            event.preventDefault();
-        } catch (error) {
-            window.console.error(error);
-        }
+        window.console.log(translitr.translit(event), translitr.getLayout());
     });
 });
