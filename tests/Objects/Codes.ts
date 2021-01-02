@@ -8,6 +8,7 @@ export namespace Codes
     export const Invalid: Code.Invalid[] = [
         [""],
     ];
+
     /**
      * @type Code.Valid
      */

@@ -15,6 +15,7 @@ describe("Testing the findKey method.", (): void => {
         expect(translitr.findKey(code)).toEqual(key);
     });
 });
+
 describe("Testing the getLayout method.", (): void => {
     test("Testing the method's default value.", (): void => {
         const translitr: Translitr = new Translitr();
@@ -26,6 +27,7 @@ describe("Testing the getLayout method.", (): void => {
         expect(translitr.getLayout()).toMatch(expected);
     });
 });
+
 describe("Testing the getLetter method.", (): void => {
     test.each(Letters.Invalid)("Testing the method values.", (code: string): void => {
         const translitr: Translitr = new Translitr();
@@ -36,6 +38,7 @@ describe("Testing the getLetter method.", (): void => {
         expect(translitr.getLetter(code)).toEqual(letter);
     });
 });
+
 describe("Testing the setLayout method.", (): void => {
     test.each(Layouts.Invalid)("Testing the property definition with not valid values.", (given: string): void => {
         const translitr: Translitr = new Translitr();
@@ -46,6 +49,7 @@ describe("Testing the setLayout method.", (): void => {
         expect(translitr.setLayout(layout)).toMatch(expected);
     });
 });
+
 describe("Testing the translit method.", (): void => {
     test.each(Events.Invalid)("Testing something invalid.", (event: KeyboardEvent): void => {
         const translitr: Translitr = new Translitr();

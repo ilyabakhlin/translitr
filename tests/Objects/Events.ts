@@ -8,6 +8,7 @@ export namespace Events
     export const Invalid: Event.Invalid[] = [
         [new KeyboardEvent("keydown")],
     ];
+
     /**
      * @type Event.Valid[]
      */

@@ -8,6 +8,7 @@ export namespace Layouts
     export const Invalid: Layout.Invalid[] = [
         ["en-us"],
     ];
+
     /**
      * @type Layout.Valid[]
      */

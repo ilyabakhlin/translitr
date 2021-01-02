@@ -8,6 +8,7 @@ export namespace Letters
     export const Invalid: Letter.Invalid[] = [
         ["Digit0"],
     ];
+
     /**
      * @type Letter.Valid[]
      */
