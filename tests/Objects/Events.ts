@@ -20,12 +20,12 @@ export namespace Events
      * @type Event.Valid[]
      */
     export const ValidLetters: Event.Valid[] = [
-        [new KeyboardEvent("keydown", {code: "KeyA"}), "KeyA"],
+        [new KeyboardEvent("keydown", {code: "KeyA"}), /^KeyA$/],
     ];
     /**
      * @type Event.Valid[]
      */
     export const ValidNumbers: Event.Valid[] = [
-        [new KeyboardEvent("keydown", {code: "Digit0"}), "Digit0"],
+        [new KeyboardEvent("keydown", {code: "Digit0"}), /^Digit0$/],
     ];
 }

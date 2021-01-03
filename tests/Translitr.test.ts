@@ -55,9 +55,9 @@ describe("Testing the translitLetter method.", (): void => {
         const translitr: Translitr = new Translitr();
         expect((): string => translitr.translitLetter(event)).toThrow(Error(`The ${event.code} key was not found.`));
     });
-    test.each(Events.ValidLetters)("Testing something valid.", (event: KeyboardEvent, letter: string): void => {
+    test.each(Events.ValidLetters)("Testing something valid.", (event: KeyboardEvent, letter: RegExp): void => {
         const translitr: Translitr = new Translitr();
-        expect(translitr.translitLetter(event)).toEqual(letter);
+        expect(translitr.translitLetter(event)).toMatch(letter);
     });
 });
 
@@ -66,8 +66,8 @@ describe("Testing the translitNumber method.", (): void => {
         const translitr: Translitr = new Translitr();
         expect((): string => translitr.translitNumber(event)).toThrow(Error(`The ${event.code} key was not found.`));
     });
-    test.each(Events.ValidNumbers)("Testing something.", (event: KeyboardEvent, number: string): void => {
+    test.each(Events.ValidNumbers)("Testing something.", (event: KeyboardEvent, number: RegExp): void => {
         const translitr: Translitr = new Translitr();
-        expect(translitr.translitNumber(event)).toEqual(number);
+        expect(translitr.translitNumber(event)).toMatch(number);
     });
 });
