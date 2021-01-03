@@ -50,6 +50,21 @@ window.addEventListener("load", (): void => {
     });
     const text: HTMLTextAreaElement = getElementTextArea("textarea#text");
     text.addEventListener("keydown", (event: KeyboardEvent): void => {
-        window.console.log(translitr.translit(event), translitr.getLayout());
+        switch (true) {
+            case event.ctrlKey:
+                switch (true) {
+                    case /^KeyA$/.test(event.code):
+                        text.select();
+                        break;
+                    case /^KeyR$/.test(event.code):
+                        window.location.reload();
+                        break;
+                }
+                break;
+            case /^Key\w$/.test(event.code):
+                event.preventDefault();
+                text.value += translitr.translitLetter(event);
+                break;
+        }
     });
 });

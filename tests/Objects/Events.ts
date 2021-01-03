@@ -13,6 +13,6 @@ export namespace Events
      * @type Event.Valid[]
      */
     export const Valid: Event.Valid[] = [
-        [new KeyboardEvent("keydown", {code: "KeyA"}), {code: "KeyA"}],
+        [new KeyboardEvent("keydown", {code: "KeyA"}), "KeyA"],
     ];
 }

@@ -25,15 +25,6 @@ export class Translitr
     }
 
     /**
-     * @param {string} code
-     * @return {Key}
-     */
-    public findKey(code: string): Key
-    {
-        return this.getLetter(code);
-    }
-
-    /**
      * @return {string}
      */
     public getLayout(): string
@@ -65,10 +56,10 @@ export class Translitr
 
     /**
      * @param {KeyboardEvent} event
-     * @return {Key}
+     * @return {string}
      */
-    public translit(event: KeyboardEvent): Key
+    public translitLetter(event: KeyboardEvent): string
     {
-        return this.findKey(event.code);
+        return this.getLetter(event.code).code;
     }
 }
