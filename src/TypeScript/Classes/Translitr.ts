@@ -70,7 +70,7 @@ export class Translitr
      */
     public translitLetter(event: KeyboardEvent): string
     {
-        return this.getLetter(event.code).code;
+        return this.getLetter(event.code).character;
     }
 
     /**
@@ -79,6 +79,6 @@ export class Translitr
      */
     public translitNumber(event: KeyboardEvent): string
     {
-        return this.getNumber(event.code).code;
+        return this.getNumber(event.code).character;
     }
 }

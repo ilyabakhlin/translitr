@@ -60,14 +60,18 @@ window.addEventListener("load", (): void => {
                     break;
             }
         } else {
+            const caretPosition: number = text.selectionStart;
+            window.console.log(caretPosition, text.selectionEnd, text.textLength);
             switch (true) {
                 case /^Digit\d$/.test(event.code):
                     event.preventDefault();
-                    text.value += translitr.translitNumber(event);
+                    text.value = `${text.value.slice(0, caretPosition)}${translitr.translitNumber(event)}${text.value.slice(caretPosition)}`;
+                    text.selectionEnd = text.selectionStart = caretPosition + 1;
                     break;
                 case /^Key\w$/.test(event.code):
                     event.preventDefault();
-                    text.value += translitr.translitLetter(event);
+                    text.value = `${text.value.slice(0, caretPosition)}${translitr.translitLetter(event)}${text.value.slice(caretPosition)}`;
+                    text.selectionEnd = text.selectionStart = caretPosition + 1;
                     break;
             }
         }
