@@ -1,4 +1,5 @@
 import {Letters} from "../Objects/Letters";
+import {Numbers} from "../Objects/Numbers";
 import {Key} from "../Types/Key";
 
 export class Translitr
@@ -42,6 +43,15 @@ export class Translitr
     }
 
     /**
+     * @param {string} code
+     * @return {Key}
+     */
+    public getNumber(code: string): Key
+    {
+        return this.getKey(code, Numbers);
+    }
+
+    /**
      * @param {string} layout
      * @return {string}
      */
@@ -61,5 +71,14 @@ export class Translitr
     public translitLetter(event: KeyboardEvent): string
     {
         return this.getLetter(event.code).code;
+    }
+
+    /**
+     * @param {KeyboardEvent} event
+     * @return {string}
+     */
+    public translitNumber(event: KeyboardEvent): string
+    {
+        return this.getNumber(event.code).code;
     }
 }

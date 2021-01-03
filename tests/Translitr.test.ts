@@ -3,6 +3,7 @@ import {Key} from "../src/TypeScript/Types/Key";
 import {Events} from "./Objects/Events";
 import {Layouts} from "./Objects/Layouts";
 import {Letters} from "./Objects/Letters";
+import {Numbers} from "./Objects/Numbers";
 
 describe("Testing the getLayout method.", (): void => {
     test("Testing the method's default value.", (): void => {
@@ -27,6 +28,17 @@ describe("Testing the getLetter method.", (): void => {
     });
 });
 
+describe("Testing the getNumber method.", (): void => {
+    test.each(Numbers.Invalid)("Testing something.", (code: string): void => {
+        const translitr: Translitr = new Translitr();
+        expect((): Key => translitr.getNumber(code)).toThrow(Error(`The ${code} key was not found.`));
+    });
+    test.each(Numbers.Valid)("Testing something.", (code: string, number: Key): void => {
+        const translitr: Translitr = new Translitr();
+        expect(translitr.getNumber(code)).toEqual(number);
+    });
+});
+
 describe("Testing the setLayout method.", (): void => {
     test.each(Layouts.Invalid)("Testing the property definition with not valid values.", (given: string): void => {
         const translitr: Translitr = new Translitr();
@@ -39,12 +51,23 @@ describe("Testing the setLayout method.", (): void => {
 });
 
 describe("Testing the translitLetter method.", (): void => {
-    test.each(Events.Invalid)("Testing something invalid.", (event: KeyboardEvent): void => {
+    test.each(Events.InvalidLetters)("Testing something invalid.", (event: KeyboardEvent): void => {
         const translitr: Translitr = new Translitr();
         expect((): string => translitr.translitLetter(event)).toThrow(Error(`The ${event.code} key was not found.`));
     });
-    test.each(Events.Valid)("Testing something valid.", (event: KeyboardEvent, key: string): void => {
+    test.each(Events.ValidLetters)("Testing something valid.", (event: KeyboardEvent, letter: string): void => {
         const translitr: Translitr = new Translitr();
-        expect(translitr.translitLetter(event)).toEqual(key);
+        expect(translitr.translitLetter(event)).toEqual(letter);
+    });
+});
+
+describe("Testing the translitNumber method.", (): void => {
+    test.each(Events.InvalidNumbers)("Testing something.", (event: KeyboardEvent): void => {
+        const translitr: Translitr = new Translitr();
+        expect((): string => translitr.translitNumber(event)).toThrow(Error(`The ${event.code} key was not found.`));
+    });
+    test.each(Events.ValidNumbers)("Testing something.", (event: KeyboardEvent, number: string): void => {
+        const translitr: Translitr = new Translitr();
+        expect(translitr.translitNumber(event)).toEqual(number);
     });
 });

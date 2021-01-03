@@ -61,6 +61,10 @@ window.addEventListener("load", (): void => {
                         break;
                 }
                 break;
+            case /^Digit\d$/.test(event.code):
+                event.preventDefault();
+                text.value += translitr.translitNumber(event);
+                break;
             case /^Key\w$/.test(event.code):
                 event.preventDefault();
                 text.value += translitr.translitLetter(event);
