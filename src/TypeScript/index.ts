@@ -50,25 +50,26 @@ window.addEventListener("load", (): void => {
     });
     const text: HTMLTextAreaElement = getElementTextArea("textarea#text");
     text.addEventListener("keydown", (event: KeyboardEvent): void => {
-        switch (true) {
-            case event.ctrlKey:
-                switch (true) {
-                    case /^KeyA$/.test(event.code):
-                        text.select();
-                        break;
-                    case /^KeyR$/.test(event.code):
-                        window.location.reload();
-                        break;
-                }
-                break;
-            case /^Digit\d$/.test(event.code):
-                event.preventDefault();
-                text.value += translitr.translitNumber(event);
-                break;
-            case /^Key\w$/.test(event.code):
-                event.preventDefault();
-                text.value += translitr.translitLetter(event);
-                break;
+        if (event.ctrlKey) {
+            switch (true) {
+                case /^KeyA$/.test(event.code):
+                    text.select();
+                    break;
+                case /^KeyR$/.test(event.code):
+                    window.location.reload();
+                    break;
+            }
+        } else {
+            switch (true) {
+                case /^Digit\d$/.test(event.code):
+                    event.preventDefault();
+                    text.value += translitr.translitNumber(event);
+                    break;
+                case /^Key\w$/.test(event.code):
+                    event.preventDefault();
+                    text.value += translitr.translitLetter(event);
+                    break;
+            }
         }
     });
 });
