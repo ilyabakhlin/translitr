@@ -132,43 +132,43 @@ export namespace Events
     export const ValidNumbers: Event.Valid[] = [
         [
             new KeyboardEvent("keydown", {code: "Digit0"}),
-            /^Digit0$/,
+            /^0$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit1"}),
-            /^Digit1$/,
+            /^1$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit2"}),
-            /^Digit2$/,
+            /^2$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit3"}),
-            /^Digit3$/,
+            /^3$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit4"}),
-            /^Digit4$/,
+            /^4$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit5"}),
-            /^Digit5$/,
+            /^5$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit6"}),
-            /^Digit6$/,
+            /^6$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit7"}),
-            /^Digit7$/,
+            /^7$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit8"}),
-            /^Digit8$/,
+            /^8$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit9"}),
-            /^Digit9$/,
+            /^9$/,
         ],
     ];
 }

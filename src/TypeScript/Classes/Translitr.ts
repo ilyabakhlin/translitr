@@ -1,4 +1,5 @@
 import {Key} from "../Interfaces/Key";
+import {Digit} from "../Interfaces/Keys/Digit";
 import {Letters} from "../Objects/Letters";
 import {Numbers} from "../Objects/Numbers";
 
@@ -46,9 +47,9 @@ export class Translitr
      * @param {string} code
      * @return {Key}
      */
-    public getNumber(code: string): Key
+    public getNumber(code: string): Digit
     {
-        return this.getKey(code, Numbers);
+        return this.getKey(code, Numbers) as Digit;
     }
 
     /**
@@ -79,6 +80,6 @@ export class Translitr
      */
     public translitNumber(event: KeyboardEvent): string
     {
-        return this.getNumber(event.code).code;
+        return this.getNumber(event.code).number;
     }
 }
