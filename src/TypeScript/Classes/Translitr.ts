@@ -1,6 +1,7 @@
 import {Key} from "../Interfaces/Key";
 import {Character} from "../Interfaces/Keys/Character";
 import {Digit} from "../Interfaces/Keys/Digit";
+import {Layout} from "../Interfaces/Layout";
 import {Letters} from "../Objects/Letters";
 import {Numbers} from "../Objects/Numbers";
 
@@ -11,6 +12,16 @@ export class Translitr
      * @private
      */
     private layout: string = "en-US";
+
+    /**
+     * @param {Layout} layout
+     * @return {boolean}
+     * @private
+     */
+    private findLayout(layout: Layout): boolean
+    {
+        return layout.code === this.getLayout();
+    }
 
     /**
      * @param {string} code
@@ -81,7 +92,13 @@ export class Translitr
      */
     public translitLetter(event: KeyboardEvent): string
     {
-        return this.getLetter(event.code).code;
+        const {layouts}: {layouts: Layout[]} = this.getLetter(event.code);
+        const layout: Layout | undefined = layouts.find(this.findLayout, this);
+        if (typeof layout === "undefined") {
+            throw new Error(`The ${this.getLayout()} layout is not supported.`);
+        } else {
+            return layout.character;
+        }
     }
 
     /**

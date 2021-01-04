@@ -22,107 +22,107 @@ export namespace Events
     export const ValidLetters: Event.Valid[] = [
         [
             new KeyboardEvent("keydown", {code: "KeyA"}),
-            /^KeyA$/,
+            /^a$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyB"}),
-            /^KeyB$/,
+            /^b$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyC"}),
-            /^KeyC$/,
+            /^c$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyD"}),
-            /^KeyD$/,
+            /^d$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyE"}),
-            /^KeyE$/,
+            /^e$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyF"}),
-            /^KeyF$/,
+            /^f$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyG"}),
-            /^KeyG$/,
+            /^g$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyH"}),
-            /^KeyH$/,
+            /^h$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyI"}),
-            /^KeyI$/,
+            /^i$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyJ"}),
-            /^KeyJ$/,
+            /^j$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyK"}),
-            /^KeyK$/,
+            /^k$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyL"}),
-            /^KeyL$/,
+            /^l$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyM"}),
-            /^KeyM$/,
+            /^m$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyN"}),
-            /^KeyN$/,
+            /^n$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyO"}),
-            /^KeyO$/,
+            /^o$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyP"}),
-            /^KeyP$/,
+            /^p$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyQ"}),
-            /^KeyQ$/,
+            /^q$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyR"}),
-            /^KeyR$/,
+            /^r$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyS"}),
-            /^KeyS$/,
+            /^s$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyT"}),
-            /^KeyT$/,
+            /^t$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyU"}),
-            /^KeyU$/,
+            /^u$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyV"}),
-            /^KeyV$/,
+            /^v$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyW"}),
-            /^KeyW$/,
+            /^w$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyX"}),
-            /^KeyX$/,
+            /^x$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyY"}),
-            /^KeyY$/,
+            /^y$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyZ"}),
-            /^KeyZ$/,
+            /^z$/,
         ],
     ];
 
