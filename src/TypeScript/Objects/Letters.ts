@@ -8,6 +8,7 @@ export const Letters: Character[] = [
         code: "KeyA",
         layouts: [
             {
+                character: "a",
                 code: "en-US",
             },
         ],
@@ -16,6 +17,7 @@ export const Letters: Character[] = [
         code: "KeyB",
         layouts: [
             {
+                character: "b",
                 code: "en-US",
             },
         ],
@@ -24,6 +26,7 @@ export const Letters: Character[] = [
         code: "KeyC",
         layouts: [
             {
+                character: "c",
                 code: "en-US",
             },
         ],
@@ -32,6 +35,7 @@ export const Letters: Character[] = [
         code: "KeyD",
         layouts: [
             {
+                character: "d",
                 code: "en-US",
             },
         ],
@@ -40,6 +44,7 @@ export const Letters: Character[] = [
         code: "KeyE",
         layouts: [
             {
+                character: "e",
                 code: "en-US",
             },
         ],
@@ -48,6 +53,7 @@ export const Letters: Character[] = [
         code: "KeyF",
         layouts: [
             {
+                character: "f",
                 code: "en-US",
             },
         ],
@@ -56,6 +62,7 @@ export const Letters: Character[] = [
         code: "KeyG",
         layouts: [
             {
+                character: "g",
                 code: "en-US",
             },
         ],
@@ -64,6 +71,7 @@ export const Letters: Character[] = [
         code: "KeyH",
         layouts: [
             {
+                character: "h",
                 code: "en-US",
             },
         ],
@@ -72,6 +80,7 @@ export const Letters: Character[] = [
         code: "KeyI",
         layouts: [
             {
+                character: "i",
                 code: "en-US",
             },
         ],
@@ -80,6 +89,7 @@ export const Letters: Character[] = [
         code: "KeyJ",
         layouts: [
             {
+                character: "j",
                 code: "en-US",
             },
         ],
@@ -88,6 +98,7 @@ export const Letters: Character[] = [
         code: "KeyK",
         layouts: [
             {
+                character: "k",
                 code: "en-US",
             },
         ],
@@ -96,6 +107,7 @@ export const Letters: Character[] = [
         code: "KeyL",
         layouts: [
             {
+                character: "l",
                 code: "en-US",
             },
         ],
@@ -104,6 +116,7 @@ export const Letters: Character[] = [
         code: "KeyM",
         layouts: [
             {
+                character: "m",
                 code: "en-US",
             },
         ],
@@ -112,6 +125,7 @@ export const Letters: Character[] = [
         code: "KeyN",
         layouts: [
             {
+                character: "n",
                 code: "en-US",
             },
         ],
@@ -120,6 +134,7 @@ export const Letters: Character[] = [
         code: "KeyO",
         layouts: [
             {
+                character: "o",
                 code: "en-US",
             },
         ],
@@ -128,6 +143,7 @@ export const Letters: Character[] = [
         code: "KeyP",
         layouts: [
             {
+                character: "p",
                 code: "en-US",
             },
         ],
@@ -136,6 +152,7 @@ export const Letters: Character[] = [
         code: "KeyQ",
         layouts: [
             {
+                character: "q",
                 code: "en-US",
             },
         ],
@@ -144,6 +161,7 @@ export const Letters: Character[] = [
         code: "KeyR",
         layouts: [
             {
+                character: "r",
                 code: "en-US",
             },
         ],
@@ -152,6 +170,7 @@ export const Letters: Character[] = [
         code: "KeyS",
         layouts: [
             {
+                character: "s",
                 code: "en-US",
             },
         ],
@@ -160,6 +179,7 @@ export const Letters: Character[] = [
         code: "KeyT",
         layouts: [
             {
+                character: "t",
                 code: "en-US",
             },
         ],
@@ -168,6 +188,7 @@ export const Letters: Character[] = [
         code: "KeyU",
         layouts: [
             {
+                character: "u",
                 code: "en-US",
             },
         ],
@@ -176,6 +197,7 @@ export const Letters: Character[] = [
         code: "KeyV",
         layouts: [
             {
+                character: "v",
                 code: "en-US",
             },
         ],
@@ -184,6 +206,7 @@ export const Letters: Character[] = [
         code: "KeyW",
         layouts: [
             {
+                character: "w",
                 code: "en-US",
             },
         ],
@@ -192,6 +215,7 @@ export const Letters: Character[] = [
         code: "KeyX",
         layouts: [
             {
+                character: "x",
                 code: "en-US",
             },
         ],
@@ -200,6 +224,7 @@ export const Letters: Character[] = [
         code: "KeyY",
         layouts: [
             {
+                character: "y",
                 code: "en-US",
             },
         ],
@@ -208,6 +233,7 @@ export const Letters: Character[] = [
         code: "KeyZ",
         layouts: [
             {
+                character: "z",
                 code: "en-US",
             },
         ],

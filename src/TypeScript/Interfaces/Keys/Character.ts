@@ -6,5 +6,5 @@ export interface Character extends Key
     /**
      * @type Layout[]
      */
-    layouts: Layout[];
+    readonly layouts: Layout[];
 }
