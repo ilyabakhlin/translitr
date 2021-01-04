@@ -22,107 +22,107 @@ export namespace Events
     export const ValidLetters: Event.Valid[] = [
         [
             new KeyboardEvent("keydown", {code: "KeyA"}),
-            /^a$/,
+            /^KeyA$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyB"}),
-            /^b$/,
+            /^KeyB$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyC"}),
-            /^c$/,
+            /^KeyC$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyD"}),
-            /^d$/,
+            /^KeyD$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyE"}),
-            /^e$/,
+            /^KeyE$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyF"}),
-            /^f$/,
+            /^KeyF$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyG"}),
-            /^g$/,
+            /^KeyG$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyH"}),
-            /^h$/,
+            /^KeyH$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyI"}),
-            /^i$/,
+            /^KeyI$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyJ"}),
-            /^j$/,
+            /^KeyJ$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyK"}),
-            /^k$/,
+            /^KeyK$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyL"}),
-            /^l$/,
+            /^KeyL$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyM"}),
-            /^m$/,
+            /^KeyM$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyN"}),
-            /^n$/,
+            /^KeyN$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyO"}),
-            /^o$/,
+            /^KeyO$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyP"}),
-            /^p$/,
+            /^KeyP$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyQ"}),
-            /^q$/,
+            /^KeyQ$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyR"}),
-            /^r$/,
+            /^KeyR$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyS"}),
-            /^s$/,
+            /^KeyS$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyT"}),
-            /^t$/,
+            /^KeyT$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyU"}),
-            /^u$/,
+            /^KeyU$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyV"}),
-            /^v$/,
+            /^KeyV$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyW"}),
-            /^w$/,
+            /^KeyW$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyX"}),
-            /^x$/,
+            /^KeyX$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyY"}),
-            /^y$/,
+            /^KeyY$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "KeyZ"}),
-            /^z$/,
+            /^KeyZ$/,
         ],
     ];
 
@@ -132,43 +132,43 @@ export namespace Events
     export const ValidNumbers: Event.Valid[] = [
         [
             new KeyboardEvent("keydown", {code: "Digit0"}),
-            /^0$/,
+            /^Digit0$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit1"}),
-            /^1$/,
+            /^Digit1$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit2"}),
-            /^2$/,
+            /^Digit2$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit3"}),
-            /^3$/,
+            /^Digit3$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit4"}),
-            /^4$/,
+            /^Digit4$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit5"}),
-            /^5$/,
+            /^Digit5$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit6"}),
-            /^6$/,
+            /^Digit6$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit7"}),
-            /^7$/,
+            /^Digit7$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit8"}),
-            /^8$/,
+            /^Digit8$/,
         ],
         [
             new KeyboardEvent("keydown", {code: "Digit9"}),
-            /^9$/,
+            /^Digit9$/,
         ],
     ];
 }

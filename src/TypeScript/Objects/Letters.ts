@@ -1,111 +1,215 @@
-import {Key} from "../Types/Key";
+import {Character} from "../Interfaces/Keys/Character";
 
 /**
- * @type Key[]
+ * @type Character[]
  */
-export const Letters: Key[] = [
+export const Letters: Character[] = [
     {
-        character: "a",
         code: "KeyA",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "b",
         code: "KeyB",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "c",
         code: "KeyC",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "d",
         code: "KeyD",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "e",
         code: "KeyE",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "f",
         code: "KeyF",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "g",
         code: "KeyG",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "h",
         code: "KeyH",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "i",
         code: "KeyI",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "j",
         code: "KeyJ",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "k",
         code: "KeyK",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "l",
         code: "KeyL",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "m",
         code: "KeyM",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "n",
         code: "KeyN",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "o",
         code: "KeyO",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "p",
         code: "KeyP",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "q",
         code: "KeyQ",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "r",
         code: "KeyR",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "s",
         code: "KeyS",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "t",
         code: "KeyT",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "u",
         code: "KeyU",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "v",
         code: "KeyV",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "w",
         code: "KeyW",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "x",
         code: "KeyX",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "y",
         code: "KeyY",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
     {
-        character: "z",
         code: "KeyZ",
+        layouts: [
+            {
+                code: "en-US",
+            },
+        ],
     },
 ];

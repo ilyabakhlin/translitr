@@ -1,47 +1,47 @@
-import {Key} from "../Types/Key";
+import {Digit} from "../Interfaces/Keys/Digit";
 
 /**
- * @type Key[]
+ * @type Digit[]
  */
-export const Numbers: Key[] = [
+export const Numbers: Digit[] = [
     {
-        character: "0",
         code: "Digit0",
+        number: "0",
     },
     {
-        character: "1",
         code: "Digit1",
+        number: "1",
     },
     {
-        character: "2",
         code: "Digit2",
+        number: "2",
     },
     {
-        character: "3",
         code: "Digit3",
+        number: "3",
     },
     {
-        character: "4",
         code: "Digit4",
+        number: "4",
     },
     {
-        character: "5",
         code: "Digit5",
+        number: "5",
     },
     {
-        character: "6",
         code: "Digit6",
+        number: "6",
     },
     {
-        character: "7",
         code: "Digit7",
+        number: "7",
     },
     {
-        character: "8",
         code: "Digit8",
+        number: "8",
     },
     {
-        character: "9",
         code: "Digit9",
+        number: "9",
     },
 ];

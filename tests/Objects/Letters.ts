@@ -25,183 +25,287 @@ export namespace Letters
         [
             "KeyA",
             {
-                character: "a",
                 code: "KeyA",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyB",
             {
-                character: "b",
                 code: "KeyB",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyC",
             {
-                character: "c",
                 code: "KeyC",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyD",
             {
-                character: "d",
                 code: "KeyD",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyE",
             {
-                character: "e",
                 code: "KeyE",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyF",
             {
-                character: "f",
                 code: "KeyF",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyG",
             {
-                character: "g",
                 code: "KeyG",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyH",
             {
-                character: "h",
                 code: "KeyH",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyI",
             {
-                character: "i",
                 code: "KeyI",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyJ",
             {
-                character: "j",
                 code: "KeyJ",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyK",
             {
-                character: "k",
                 code: "KeyK",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyL",
             {
-                character: "l",
                 code: "KeyL",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyM",
             {
-                character: "m",
                 code: "KeyM",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyN",
             {
-                character: "n",
                 code: "KeyN",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyO",
             {
-                character: "o",
                 code: "KeyO",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyP",
             {
-                character: "p",
                 code: "KeyP",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyQ",
             {
-                character: "q",
                 code: "KeyQ",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyR",
             {
-                character: "r",
                 code: "KeyR",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyS",
             {
-                character: "s",
                 code: "KeyS",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyT",
             {
-                character: "t",
                 code: "KeyT",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyU",
             {
-                character: "u",
                 code: "KeyU",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyV",
             {
-                character: "v",
                 code: "KeyV",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyW",
             {
-                character: "w",
                 code: "KeyW",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyX",
             {
-                character: "x",
                 code: "KeyX",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyY",
             {
-                character: "y",
                 code: "KeyY",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
         [
             "KeyZ",
             {
-                character: "z",
                 code: "KeyZ",
+                layouts: [
+                    {
+                        code: "en-US",
+                    },
+                ],
             },
         ],
     ];
