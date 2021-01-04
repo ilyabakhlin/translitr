@@ -1,6 +1,7 @@
 import {Translitr} from "../src/TypeScript/Classes/Translitr";
 import {Key} from "../src/TypeScript/Interfaces/Key";
 import {Character} from "../src/TypeScript/Interfaces/Keys/Character";
+import {Digit} from "../src/TypeScript/Interfaces/Keys/Digit";
 import {Events} from "./Objects/Events";
 import {Layouts} from "./Objects/Layouts";
 import {Letters} from "./Objects/Letters";
@@ -32,9 +33,9 @@ describe("Testing the getLetter method.", (): void => {
 describe("Testing the getNumber method.", (): void => {
     test.each(Numbers.Invalid)("Testing something.", (code: string): void => {
         const translitr: Translitr = new Translitr();
-        expect((): Key => translitr.getNumber(code)).toThrow(Error(`The ${code} key was not found.`));
+        expect((): Digit => translitr.getNumber(code)).toThrow(Error(`The ${code} key was not found.`));
     });
-    test.each(Numbers.Valid)("Testing something.", (code: string, number: Key): void => {
+    test.each(Numbers.Valid)("Testing something.", (code: string, number: Digit): void => {
         const translitr: Translitr = new Translitr();
         expect(translitr.getNumber(code)).toEqual(number);
     });
