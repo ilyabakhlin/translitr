@@ -61,7 +61,6 @@ window.addEventListener("load", (): void => {
             }
         } else {
             const caretPosition: number = text.selectionStart;
-            window.console.log(caretPosition, text.selectionEnd, text.textLength);
             switch (true) {
                 case /^Digit\d$/.test(event.code):
                     event.preventDefault();
