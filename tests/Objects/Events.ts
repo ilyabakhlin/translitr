@@ -21,108 +21,212 @@ export namespace Events
      */
     export const ValidLetters: Event.Valid[] = [
         [
-            new KeyboardEvent("keydown", {code: "KeyA"}),
+            new KeyboardEvent("keydown", {code: "KeyA", shiftKey: false}),
             /^a$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyB"}),
+            new KeyboardEvent("keydown", {code: "KeyA", shiftKey: true}),
+            /^A$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyB", shiftKey: false}),
             /^b$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyC"}),
+            new KeyboardEvent("keydown", {code: "KeyB", shiftKey: true}),
+            /^B$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyC", shiftKey: false}),
             /^c$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyD"}),
+            new KeyboardEvent("keydown", {code: "KeyC", shiftKey: true}),
+            /^C$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyD", shiftKey: false}),
             /^d$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyE"}),
+            new KeyboardEvent("keydown", {code: "KeyD", shiftKey: true}),
+            /^D$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyE", shiftKey: false}),
             /^e$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyF"}),
+            new KeyboardEvent("keydown", {code: "KeyE", shiftKey: true}),
+            /^E$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyF", shiftKey: false}),
             /^f$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyG"}),
+            new KeyboardEvent("keydown", {code: "KeyF", shiftKey: true}),
+            /^F$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyG", shiftKey: false}),
             /^g$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyH"}),
+            new KeyboardEvent("keydown", {code: "KeyG", shiftKey: true}),
+            /^G$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyH", shiftKey: false}),
             /^h$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyI"}),
+            new KeyboardEvent("keydown", {code: "KeyH", shiftKey: true}),
+            /^H$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyI", shiftKey: false}),
             /^i$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyJ"}),
+            new KeyboardEvent("keydown", {code: "KeyI", shiftKey: true}),
+            /^I$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyJ", shiftKey: false}),
             /^j$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyK"}),
+            new KeyboardEvent("keydown", {code: "KeyJ", shiftKey: true}),
+            /^J$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyK", shiftKey: false}),
             /^k$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyL"}),
+            new KeyboardEvent("keydown", {code: "KeyK", shiftKey: true}),
+            /^K$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyL", shiftKey: false}),
             /^l$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyM"}),
+            new KeyboardEvent("keydown", {code: "KeyL", shiftKey: true}),
+            /^L$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyM", shiftKey: false}),
             /^m$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyN"}),
+            new KeyboardEvent("keydown", {code: "KeyM", shiftKey: true}),
+            /^M$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyN", shiftKey: false}),
             /^n$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyO"}),
+            new KeyboardEvent("keydown", {code: "KeyN", shiftKey: true}),
+            /^N$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyO", shiftKey: false}),
             /^o$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyP"}),
+            new KeyboardEvent("keydown", {code: "KeyO", shiftKey: true}),
+            /^O$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyP", shiftKey: false}),
             /^p$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyQ"}),
+            new KeyboardEvent("keydown", {code: "KeyP", shiftKey: true}),
+            /^P$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyQ", shiftKey: false}),
             /^q$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyR"}),
+            new KeyboardEvent("keydown", {code: "KeyQ", shiftKey: true}),
+            /^Q$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyR", shiftKey: false}),
             /^r$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyS"}),
+            new KeyboardEvent("keydown", {code: "KeyR", shiftKey: true}),
+            /^R$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyS", shiftKey: false}),
             /^s$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyT"}),
+            new KeyboardEvent("keydown", {code: "KeyS", shiftKey: true}),
+            /^S$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyT", shiftKey: false}),
             /^t$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyU"}),
+            new KeyboardEvent("keydown", {code: "KeyT", shiftKey: true}),
+            /^T$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyU", shiftKey: false}),
             /^u$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyV"}),
+            new KeyboardEvent("keydown", {code: "KeyU", shiftKey: true}),
+            /^U$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyV", shiftKey: false}),
             /^v$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyW"}),
+            new KeyboardEvent("keydown", {code: "KeyV", shiftKey: true}),
+            /^V$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyW", shiftKey: false}),
             /^w$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyX"}),
+            new KeyboardEvent("keydown", {code: "KeyW", shiftKey: true}),
+            /^W$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyX", shiftKey: false}),
             /^x$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyY"}),
+            new KeyboardEvent("keydown", {code: "KeyX", shiftKey: true}),
+            /^X$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyY", shiftKey: false}),
             /^y$/,
         ],
         [
-            new KeyboardEvent("keydown", {code: "KeyZ"}),
+            new KeyboardEvent("keydown", {code: "KeyY", shiftKey: true}),
+            /^Y$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyZ", shiftKey: false}),
             /^z$/,
+        ],
+        [
+            new KeyboardEvent("keydown", {code: "KeyZ", shiftKey: true}),
+            /^Z$/,
         ],
     ];
 

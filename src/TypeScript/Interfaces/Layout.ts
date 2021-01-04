@@ -8,5 +8,10 @@ export interface Layout
     /**
      * @type {string}
      */
+    readonly characterShift: string;
+
+    /**
+     * @type {string}
+     */
     readonly code: string;
 }

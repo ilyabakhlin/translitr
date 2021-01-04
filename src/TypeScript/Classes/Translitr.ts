@@ -97,7 +97,11 @@ export class Translitr
         if (typeof layout === "undefined") {
             throw new Error(`The ${this.getLayout()} layout is not supported.`);
         } else {
-            return layout.character;
+            if (this.isModifier(event)) {
+                return layout.characterShift;
+            } else {
+                return layout.character;
+            }
         }
     }
 

@@ -29,6 +29,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "a",
+                        characterShift: "A",
                         code: "en-US",
                     },
                 ],
@@ -41,6 +42,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "b",
+                        characterShift: "B",
                         code: "en-US",
                     },
                 ],
@@ -53,6 +55,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "c",
+                        characterShift: "C",
                         code: "en-US",
                     },
                 ],
@@ -65,6 +68,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "d",
+                        characterShift: "D",
                         code: "en-US",
                     },
                 ],
@@ -77,6 +81,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "e",
+                        characterShift: "E",
                         code: "en-US",
                     },
                 ],
@@ -89,6 +94,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "f",
+                        characterShift: "F",
                         code: "en-US",
                     },
                 ],
@@ -101,6 +107,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "g",
+                        characterShift: "G",
                         code: "en-US",
                     },
                 ],
@@ -113,6 +120,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "h",
+                        characterShift: "H",
                         code: "en-US",
                     },
                 ],
@@ -125,6 +133,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "i",
+                        characterShift: "I",
                         code: "en-US",
                     },
                 ],
@@ -137,6 +146,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "j",
+                        characterShift: "J",
                         code: "en-US",
                     },
                 ],
@@ -149,6 +159,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "k",
+                        characterShift: "K",
                         code: "en-US",
                     },
                 ],
@@ -161,6 +172,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "l",
+                        characterShift: "L",
                         code: "en-US",
                     },
                 ],
@@ -173,6 +185,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "m",
+                        characterShift: "M",
                         code: "en-US",
                     },
                 ],
@@ -185,6 +198,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "n",
+                        characterShift: "N",
                         code: "en-US",
                     },
                 ],
@@ -197,6 +211,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "o",
+                        characterShift: "O",
                         code: "en-US",
                     },
                 ],
@@ -209,6 +224,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "p",
+                        characterShift: "P",
                         code: "en-US",
                     },
                 ],
@@ -221,6 +237,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "q",
+                        characterShift: "Q",
                         code: "en-US",
                     },
                 ],
@@ -233,6 +250,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "r",
+                        characterShift: "R",
                         code: "en-US",
                     },
                 ],
@@ -245,6 +263,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "s",
+                        characterShift: "S",
                         code: "en-US",
                     },
                 ],
@@ -257,6 +276,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "t",
+                        characterShift: "T",
                         code: "en-US",
                     },
                 ],
@@ -269,6 +289,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "u",
+                        characterShift: "U",
                         code: "en-US",
                     },
                 ],
@@ -281,6 +302,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "v",
+                        characterShift: "V",
                         code: "en-US",
                     },
                 ],
@@ -293,6 +315,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "w",
+                        characterShift: "W",
                         code: "en-US",
                     },
                 ],
@@ -305,6 +328,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "x",
+                        characterShift: "X",
                         code: "en-US",
                     },
                 ],
@@ -317,6 +341,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "y",
+                        characterShift: "Y",
                         code: "en-US",
                     },
                 ],
@@ -329,6 +354,7 @@ export namespace Letters
                 layouts: [
                     {
                         character: "z",
+                        characterShift: "Z",
                         code: "en-US",
                     },
                 ],
