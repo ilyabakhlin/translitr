@@ -54,6 +54,15 @@ export class Translitr
     }
 
     /**
+     * @param {KeyboardEvent} event
+     * @return {boolean}
+     */
+    public isModifier(event: KeyboardEvent): boolean
+    {
+        return event.shiftKey;
+    }
+
+    /**
      * @param {string} layout
      * @return {string}
      */

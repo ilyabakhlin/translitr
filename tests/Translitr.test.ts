@@ -5,6 +5,7 @@ import {Digit} from "../src/TypeScript/Interfaces/Keys/Digit";
 import {Events} from "./Objects/Events";
 import {Layouts} from "./Objects/Layouts";
 import {Letters} from "./Objects/Letters";
+import {Modifiers} from "./Objects/Modifiers";
 import {Numbers} from "./Objects/Numbers";
 
 describe("Testing the getLayout method.", (): void => {
@@ -38,6 +39,17 @@ describe("Testing the getNumber method.", (): void => {
     test.each(Numbers.Valid)("Testing something.", (code: string, number: Digit): void => {
         const translitr: Translitr = new Translitr();
         expect(translitr.getNumber(code)).toEqual(number);
+    });
+});
+
+describe("Testing the isModifier method.", (): void => {
+    test.each(Modifiers.False)("Testing something.", (event: KeyboardEvent): void => {
+        const translitr: Translitr = new Translitr();
+        expect(translitr.isModifier(event)).toBeFalsy();
+    });
+    test.each(Modifiers.True)("Testing something.", (event: KeyboardEvent): void => {
+        const translitr: Translitr = new Translitr();
+        expect(translitr.isModifier(event)).toBeTruthy();
     });
 });
 
