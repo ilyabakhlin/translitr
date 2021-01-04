@@ -1,4 +1,5 @@
 import {Key} from "../Interfaces/Key";
+import {Character} from "../Interfaces/Keys/Character";
 import {Digit} from "../Interfaces/Keys/Digit";
 import {Letters} from "../Objects/Letters";
 import {Numbers} from "../Objects/Numbers";
@@ -36,16 +37,16 @@ export class Translitr
 
     /**
      * @param {string} code
-     * @return {Key}
+     * @return {Character}
      */
-    public getLetter(code: string): Key
+    public getLetter(code: string): Character
     {
-        return this.getKey(code, Letters);
+        return this.getKey(code, Letters) as Character;
     }
 
     /**
      * @param {string} code
-     * @return {Key}
+     * @return {Digit}
      */
     public getNumber(code: string): Digit
     {
