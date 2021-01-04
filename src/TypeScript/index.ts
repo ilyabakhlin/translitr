@@ -64,13 +64,15 @@ window.addEventListener("load", (): void => {
             switch (true) {
                 case /^Digit\d$/.test(event.code):
                     event.preventDefault();
-                    text.value = `${text.value.slice(0, caretPosition)}${translitr.translitNumber(event)}${text.value.slice(caretPosition)}`;
-                    text.selectionEnd = text.selectionStart = caretPosition + 1;
+                    const number: string = translitr.translitNumber(event);
+                    text.value = `${text.value.slice(0, caretPosition)}${number}${text.value.slice(caretPosition)}`;
+                    text.selectionEnd = text.selectionStart = caretPosition + number.length;
                     break;
                 case /^Key\w$/.test(event.code):
                     event.preventDefault();
-                    text.value = `${text.value.slice(0, caretPosition)}${translitr.translitLetter(event)}${text.value.slice(caretPosition)}`;
-                    text.selectionEnd = text.selectionStart = caretPosition + 1;
+                    const character: string = translitr.translitLetter(event);
+                    text.value = `${text.value.slice(0, caretPosition)}${character}${text.value.slice(caretPosition)}`;
+                    text.selectionEnd = text.selectionStart = caretPosition + character.length;
                     break;
             }
         }
