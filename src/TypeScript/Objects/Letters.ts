@@ -12,6 +12,11 @@ export const Letters: Character[] = [
                 characterShift: "A",
                 code: "en-US",
             },
+            {
+                character: "ф",
+                characterShift: "Ф",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -21,6 +26,11 @@ export const Letters: Character[] = [
                 character: "b",
                 characterShift: "B",
                 code: "en-US",
+            },
+            {
+                character: "и",
+                characterShift: "И",
+                code: "ru-RU",
             },
         ],
     },
@@ -32,6 +42,11 @@ export const Letters: Character[] = [
                 characterShift: "C",
                 code: "en-US",
             },
+            {
+                character: "с",
+                characterShift: "С",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -41,6 +56,11 @@ export const Letters: Character[] = [
                 character: "d",
                 characterShift: "D",
                 code: "en-US",
+            },
+            {
+                character: "в",
+                characterShift: "В",
+                code: "ru-RU",
             },
         ],
     },
@@ -52,6 +72,11 @@ export const Letters: Character[] = [
                 characterShift: "E",
                 code: "en-US",
             },
+            {
+                character: "у",
+                characterShift: "У",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -61,6 +86,11 @@ export const Letters: Character[] = [
                 character: "f",
                 characterShift: "F",
                 code: "en-US",
+            },
+            {
+                character: "а",
+                characterShift: "А",
+                code: "ru-RU",
             },
         ],
     },
@@ -72,6 +102,11 @@ export const Letters: Character[] = [
                 characterShift: "G",
                 code: "en-US",
             },
+            {
+                character: "п",
+                characterShift: "П",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -81,6 +116,11 @@ export const Letters: Character[] = [
                 character: "h",
                 characterShift: "H",
                 code: "en-US",
+            },
+            {
+                character: "р",
+                characterShift: "Р",
+                code: "ru-RU",
             },
         ],
     },
@@ -92,6 +132,11 @@ export const Letters: Character[] = [
                 characterShift: "I",
                 code: "en-US",
             },
+            {
+                character: "ш",
+                characterShift: "Ш",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -101,6 +146,11 @@ export const Letters: Character[] = [
                 character: "j",
                 characterShift: "J",
                 code: "en-US",
+            },
+            {
+                character: "о",
+                characterShift: "О",
+                code: "ru-RU",
             },
         ],
     },
@@ -112,6 +162,11 @@ export const Letters: Character[] = [
                 characterShift: "K",
                 code: "en-US",
             },
+            {
+                character: "л",
+                characterShift: "Л",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -121,6 +176,11 @@ export const Letters: Character[] = [
                 character: "l",
                 characterShift: "L",
                 code: "en-US",
+            },
+            {
+                character: "д",
+                characterShift: "Д",
+                code: "ru-RU",
             },
         ],
     },
@@ -132,6 +192,11 @@ export const Letters: Character[] = [
                 characterShift: "M",
                 code: "en-US",
             },
+            {
+                character: "ь",
+                characterShift: "Ь",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -141,6 +206,11 @@ export const Letters: Character[] = [
                 character: "n",
                 characterShift: "N",
                 code: "en-US",
+            },
+            {
+                character: "т",
+                characterShift: "Т",
+                code: "ru-RU",
             },
         ],
     },
@@ -152,6 +222,11 @@ export const Letters: Character[] = [
                 characterShift: "O",
                 code: "en-US",
             },
+            {
+                character: "щ",
+                characterShift: "Щ",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -161,6 +236,11 @@ export const Letters: Character[] = [
                 character: "p",
                 characterShift: "P",
                 code: "en-US",
+            },
+            {
+                character: "з",
+                characterShift: "З",
+                code: "ru-RU",
             },
         ],
     },
@@ -172,6 +252,11 @@ export const Letters: Character[] = [
                 characterShift: "Q",
                 code: "en-US",
             },
+            {
+                character: "й",
+                characterShift: "Й",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -181,6 +266,11 @@ export const Letters: Character[] = [
                 character: "r",
                 characterShift: "R",
                 code: "en-US",
+            },
+            {
+                character: "к",
+                characterShift: "К",
+                code: "ru-RU",
             },
         ],
     },
@@ -192,6 +282,11 @@ export const Letters: Character[] = [
                 characterShift: "S",
                 code: "en-US",
             },
+            {
+                character: "ы",
+                characterShift: "Ы",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -201,6 +296,11 @@ export const Letters: Character[] = [
                 character: "t",
                 characterShift: "T",
                 code: "en-US",
+            },
+            {
+                character: "е",
+                characterShift: "Е",
+                code: "ru-RU",
             },
         ],
     },
@@ -212,6 +312,11 @@ export const Letters: Character[] = [
                 characterShift: "U",
                 code: "en-US",
             },
+            {
+                character: "г",
+                characterShift: "Г",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -221,6 +326,11 @@ export const Letters: Character[] = [
                 character: "v",
                 characterShift: "V",
                 code: "en-US",
+            },
+            {
+                character: "м",
+                characterShift: "М",
+                code: "ru-RU",
             },
         ],
     },
@@ -232,6 +342,11 @@ export const Letters: Character[] = [
                 characterShift: "W",
                 code: "en-US",
             },
+            {
+                character: "ц",
+                characterShift: "Ц",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -241,6 +356,11 @@ export const Letters: Character[] = [
                 character: "x",
                 characterShift: "X",
                 code: "en-US",
+            },
+            {
+                character: "ч",
+                characterShift: "Ч",
+                code: "ru-RU",
             },
         ],
     },
@@ -252,6 +372,11 @@ export const Letters: Character[] = [
                 characterShift: "Y",
                 code: "en-US",
             },
+            {
+                character: "н",
+                characterShift: "Н",
+                code: "ru-RU",
+            },
         ],
     },
     {
@@ -261,6 +386,11 @@ export const Letters: Character[] = [
                 character: "z",
                 characterShift: "Z",
                 code: "en-US",
+            },
+            {
+                character: "я",
+                characterShift: "Я",
+                code: "ru-RU",
             },
         ],
     },
