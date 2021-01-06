@@ -1,6 +1,6 @@
 module.exports = {
     "collectCoverage": true,
-    "moduleFileExtensions": ["ts", "js"],
+    "moduleFileExtensions": ["js", "ts"],
     "testMatch": [
         "**/tests/*.test.ts",
     ],
