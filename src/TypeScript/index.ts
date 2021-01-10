@@ -53,10 +53,22 @@ window.addEventListener("load", (): void => {
     });
 
     content.addEventListener("keydown", (event: KeyboardEvent): void => {
-        window.console.log(event);
+        event.preventDefault();
+        window.console.log(event); // TODO: Remove this line.
+        switch (event.code) {
+            case "AltRight":
+                translitr.altRight = true;
+                break;
+        }
     });
 
     content.addEventListener("keyup", (event: KeyboardEvent): void => {
-        window.console.log(event);
+        event.preventDefault();
+        window.console.log(event); // TODO: Remove this line.
+        switch (event.code) {
+            case "AltRight":
+                translitr.altRight = false;
+                break;
+        }
     });
 });
