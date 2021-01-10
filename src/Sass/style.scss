@@ -4,12 +4,12 @@ html {
     body {
         margin: 0;
 
-        select {
+        select#layouts {
             font-size: 0.8125rem;
             width: 100%;
         }
 
-        textarea {
+        textarea#content {
             box-sizing: border-box;
             height: 8rem;
             resize: none;
