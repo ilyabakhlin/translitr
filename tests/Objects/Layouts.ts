@@ -14,7 +14,5 @@ export namespace Layouts
      */
     export const Valid: Layout.Valid[] = [
         ["en-US", /^en-US$/],
-        ["es-ES", /^es-ES$/],
-        ["ru-RU", /^ru-RU/],
     ];
 }

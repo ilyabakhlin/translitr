@@ -6,26 +6,34 @@ export class Translitr implements TranslitrInterface
      * @type {string}
      * @private
      */
-    private layout: string = "en-US";
+    private _layout: string = "";
 
     /**
      * @return {string}
      */
-    public getLayout(): string
+    public get layout(): string
     {
-        return this.layout;
+        return this._layout;
     }
 
     /**
      * @param {string} layout
      * @return {string}
      */
-    public setLayout(layout: string): string
+    public set layout(layout: string)
     {
         if (/^[a-z]{2}-[A-Z]{2}$/.test(layout)) {
-            return this.layout = layout;
+            this._layout = layout;
         } else {
-            throw new Error("The given argument given for the {layout} parameter is not valid.");
+            throw new Error("The given argument for the {layout} parameter is not valid.");
         }
+    }
+
+    /**
+     * @param {string} layout
+     */
+    public constructor(layout: string = "en-US")
+    {
+        this.layout = layout;
     }
 }

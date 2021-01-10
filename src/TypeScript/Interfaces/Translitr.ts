@@ -1,13 +1,7 @@
 export interface Translitr
 {
     /**
-     * @return {string}
+     * @type {string}
      */
-    getLayout(): string;
-
-    /**
-     * @param {string} layout
-     * @return {string}
-     */
-    setLayout(layout: string): string;
+    layout: string;
 }
