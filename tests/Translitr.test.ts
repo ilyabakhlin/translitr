@@ -1,5 +1,6 @@
 import {Translitr} from "../src/TypeScript/Classes/Translitr";
 import {Translitr as TranslitrInterface} from "../src/TypeScript/Interfaces/Translitr";
+import {AltRights} from "./Objects/AltRights";
 import {Layouts} from "./Objects/Layouts";
 
 describe("Testing the constructor method.", (): void => {
@@ -13,6 +14,34 @@ describe("Testing the constructor method.", (): void => {
     test.each(Layouts.Valid)("", (layout: string, expected: RegExp): void => { // TODO: Add a description.
         const translitr: TranslitrInterface = new Translitr(layout);
         expect(translitr.layout).toMatch(expected);
+    });
+});
+
+describe("Testing the altRight property's getter method.", (): void => {
+    test("", (): void => { // TODO: Add a description.
+        const translitr: TranslitrInterface = new Translitr();
+        expect(translitr.altRight).toBeFalsy();
+    });
+    test.each(AltRights.False)("", (value: boolean): void => { // TODO: Add a description.
+        const translitr: TranslitrInterface = new Translitr();
+        translitr.altRight = value;
+        expect(translitr.altRight).toBeFalsy();
+    });
+    test.each(AltRights.True)("", (value: boolean): void => { // TODO: Add a description.
+        const translitr: TranslitrInterface = new Translitr();
+        translitr.altRight = value;
+        expect(translitr.altRight).toBeTruthy();
+    });
+});
+
+describe("Testing the altRight property's setter method.", (): void => {
+    test.each(AltRights.False)("", (value: boolean): void => { // TODO: Add a description.
+        const translitr: TranslitrInterface = new Translitr();
+        expect(translitr.altRight = value).toBeFalsy();
+    });
+    test.each(AltRights.True)("", (value: boolean): void => { // TODO: Add a description.
+        const translitr: TranslitrInterface = new Translitr();
+        expect(translitr.altRight = value).toBeTruthy();
     });
 });
 

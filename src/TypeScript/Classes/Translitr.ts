@@ -3,10 +3,32 @@ import {Translitr as TranslitrInterface} from "../Interfaces/Translitr";
 export class Translitr implements TranslitrInterface
 {
     /**
+     * @type {boolean}
+     * @private
+     */
+    private _altRight: boolean = false;
+
+    /**
      * @type {string}
      * @private
      */
     private _layout: string = "";
+
+    /**
+     * @return {boolean}
+     */
+    public get altRight(): boolean
+    {
+        return this._altRight;
+    }
+
+    /**
+     * @param {boolean} value
+     */
+    public set altRight(value: boolean)
+    {
+        this._altRight = value;
+    }
 
     /**
      * @return {string}
