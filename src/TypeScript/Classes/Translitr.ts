@@ -25,7 +25,7 @@ export class Translitr implements TranslitrInterface
         if (/^[a-z]{2}-[A-Z]{2}$/.test(layout)) {
             return this.layout = layout;
         } else {
-            throw new Error(); // TODO: Define an error message.
+            throw new Error("The given argument given for the {layout} parameter is not valid.");
         }
     }
 }

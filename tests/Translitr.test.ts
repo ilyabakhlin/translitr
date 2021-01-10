@@ -17,7 +17,7 @@ describe("Testing the getLayout method.", (): void => {
 describe("Testing the setLayout method.", (): void => {
     test.each(Layouts.Invalid)("", (layout: string): void => { // TODO: Add a description.
         const translitr: TranslitrInterface = new Translitr();
-        expect((): string => translitr.setLayout(layout)).toThrow(Error()); // TODO: Define an error message.
+        expect((): string => translitr.setLayout(layout)).toThrow(Error("The given argument given for the {layout} parameter is not valid."));
     });
     test.each(Layouts.Valid)("", (layout: string, expected: RegExp): void => { // TODO: Add a description.
         const translitr: TranslitrInterface = new Translitr();
