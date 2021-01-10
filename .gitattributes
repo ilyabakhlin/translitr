@@ -5,6 +5,9 @@
 # HTML files.
 *.html text eol=lf
 
+# Image files.
+*.ico binary
+
 # JavaScript files.
 *.js text eol=lf
 
