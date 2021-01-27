@@ -5,8 +5,8 @@ cache:
         - public/
 
 stages:
-    - test
     - build
+    - test
 
 variables:
     IMAGE: registry.gitlab.com/quorrax/docker/runner/node
@@ -25,14 +25,29 @@ variables:
         - npm test
     stage: test
 
-Node.js LTS Test:
+Node.js 10 Build:
     extends:
-        - .test
-    image: ${IMAGE}:lts
+        - .build
+    image: ${IMAGE}:10
 
-Node.js Current Test:
+Node.js 12 Build:
     extends:
-        - .test
+        - .build
+    image: ${IMAGE}:12
+
+Node.js 14 Build:
+    extends:
+        - .build
+    image: ${IMAGE}:14
+
+Node.js 15 Build:
+    extends:
+        - .build
+    image: ${IMAGE}:15
+
+Node.js Current Build:
+    extends:
+        - .build
     image: ${IMAGE}:current
 
 Node.js LTS Build:
@@ -40,7 +55,32 @@ Node.js LTS Build:
         - .build
     image: ${IMAGE}:lts
 
-Node.js Current Build:
+Node.js 10 Test:
     extends:
-        - .build
+        - .test
+    image: ${IMAGE}:10
+
+Node.js 12 Test:
+    extends:
+        - .test
+    image: ${IMAGE}:12
+
+Node.js 14 Test:
+    extends:
+        - .test
+    image: ${IMAGE}:14
+
+Node.js 15 Test:
+    extends:
+        - .test
+    image: ${IMAGE}:15
+
+Node.js Current Test:
+    extends:
+        - .test
     image: ${IMAGE}:current
+
+Node.js LTS Test:
+    extends:
+        - .test
+    image: ${IMAGE}:lts
