@@ -46,10 +46,10 @@ function getElementTextArea(query: string): HTMLTextAreaElement
 window.addEventListener("load", (): void => {
     const content: HTMLTextAreaElement = getElementTextArea("textarea#content");
     const layouts: HTMLSelectElement = getElementSelect("select#layouts");
-    const translitr: TranslitrInterface = new Translitr(layouts.options[layouts.selectedIndex].value);
+    const translitr: TranslitrInterface = new Translitr(layouts.value);
 
     layouts.addEventListener("change", (): void => {
-        translitr.layout = layouts.options[layouts.selectedIndex].value;
+        translitr.layout = layouts.value;
     });
 
     content.addEventListener("keydown", (event: KeyboardEvent): void => {
