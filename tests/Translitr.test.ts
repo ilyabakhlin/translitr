@@ -1,6 +1,8 @@
 import {Translitr} from "../src/TypeScript/Classes/Translitr";
+import {Key as KeyInterface} from "../src/TypeScript/Interfaces/Key";
 import {Translitr as TranslitrInterface} from "../src/TypeScript/Interfaces/Translitr";
 import {AltRights} from "./Objects/AltRights";
+import {Codes} from "./Objects/Codes";
 import {Layouts} from "./Objects/Layouts";
 
 describe("Testing the constructor method.", (): void => {
@@ -66,4 +68,18 @@ describe("Testing the layout property's setter method.", (): void => {
         const translitr: TranslitrInterface = new Translitr();
         expect(translitr.layout = layout).toMatch(expected);
     });
+});
+
+describe("Testing the getKey method", (): void => {
+    test.each(Codes.Invalid)("", (code: string): void => { // TODO: Add a description.
+        const translitr: TranslitrInterface = new Translitr();
+        expect((): KeyInterface => translitr.getKey(code)).toThrow(Error(`No key was found with the "${code}" code.`));
+    });
+    test.each(Codes.Valid)("", (code: string, key: KeyInterface): void => { // TODO: Add a description.
+        const translitr: TranslitrInterface = new Translitr();
+        expect(translitr.getKey(code)).toStrictEqual(key);
+    });
+});
+
+describe("Testing the translit method.", (): void => {
 });

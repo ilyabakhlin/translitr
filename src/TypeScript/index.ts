@@ -50,10 +50,16 @@ window.addEventListener("load", (): void => {
 
     content.addEventListener("keydown", (event: KeyboardEvent): void => {
         event.preventDefault();
-        window.console.log(event); // TODO: Remove this line.
-        switch (event.code) {
-            case "AltRight":
+        switch (true) {
+            case /^AltRight$/.test(event.code):
                 translitr.altRight = true;
+                break;
+            default:
+                try {
+                    window.console.log(translitr.translit(event));
+                } catch (error: any) {
+                    window.console.error(error);
+                }
                 break;
         }
     });

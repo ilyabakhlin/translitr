@@ -3,6 +3,7 @@
         "alwaysStrict": true,
         "esModuleInterop": true,
         "module": "ES2020",
+        "moduleResolution": "Node",
         "noImplicitAny": true,
         "noImplicitThis": true,
         "sourceMap": true,
