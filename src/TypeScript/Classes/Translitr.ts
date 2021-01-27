@@ -4,15 +4,13 @@ export class Translitr implements TranslitrInterface
 {
     /**
      * @type {boolean}
-     * @private
      */
     private _altRight: boolean = false;
 
     /**
      * @type {string}
-     * @private
      */
-    private _layout: string = "";
+    declare private _layout: string;
 
     /**
      * @return {boolean}

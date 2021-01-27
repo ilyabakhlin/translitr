@@ -58,7 +58,7 @@ describe("Testing the layout property's getter method.", (): void => {
 });
 
 describe("Testing the layout property's setter method.", (): void => {
-    test.each(Layouts.Invalid)("", (layout: string): void => {
+    test.each(Layouts.Invalid)("", (layout: string): void => { // TODO: Add a description.
         const translitr: TranslitrInterface = new Translitr();
         expect((): string => translitr.layout = layout).toThrow(Error("The given argument for the {layout} parameter is not valid."));
     });

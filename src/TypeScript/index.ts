@@ -48,10 +48,6 @@ window.addEventListener("load", (): void => {
     const layouts: HTMLSelectElement = getElementSelect("select#layouts");
     const translitr: TranslitrInterface = new Translitr(layouts.value);
 
-    layouts.addEventListener("change", (): void => {
-        translitr.layout = layouts.value;
-    });
-
     content.addEventListener("keydown", (event: KeyboardEvent): void => {
         event.preventDefault();
         window.console.log(event); // TODO: Remove this line.
@@ -70,5 +66,9 @@ window.addEventListener("load", (): void => {
                 translitr.altRight = false;
                 break;
         }
+    });
+
+    layouts.addEventListener("change", (): void => {
+        translitr.layout = layouts.value;
     });
 });
